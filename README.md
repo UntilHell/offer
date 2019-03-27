@@ -1,5 +1,5 @@
 # note
 
-##html+js
+## html+js
 
 jq取的是字符串
