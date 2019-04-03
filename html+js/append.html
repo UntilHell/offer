@@ -11,10 +11,14 @@
  <body>
 	<input type="button"  name="add" value="add">
 	<table border="1px" >
-		<tr>
+		<tr id="one">
 			<td>1</td>
 			<td>1</td>
 		</tr>
+		
+		
+		
+		
 		<tr>
 			<td>2</td>
 			<td>2</td>
@@ -31,8 +35,9 @@
 	$(function(){
 		$("input").click(function(){
 			var str = $("table").html();
-			$("table").empty();
-			$("table").append(str + "<tr><td>3</td><td>3</td></tr>");
+			//$("table").empty();
+			//$("table").append(str + "<tr><td>3</td><td>3</td></tr>");
+			$("#one").after("<tr><td>3</td><td>3</td></tr>");
 		});
 	});
 </script>
